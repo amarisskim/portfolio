@@ -2,11 +2,11 @@
 // Hero Titles per Role
 // ===========================
 const heroTitles = {
-    all: "Building the energy infrastructure behind the AI revolution",
-    pm: "Leading cross-functional teams to deliver critical energy infrastructure",
-    bd: "Driving strategic growth and originating high-value energy partnerships",
-    investment: "Structuring and evaluating energy investments that power the digital economy",
-    strategy: "Negotiating complex energy agreements that unlock data center capacity"
+    all: "Powering the AI revolution through data center energy infrastructure",
+    pm: "Leading cross-functional teams from ambiguity to execution on complex infrastructure programs",
+    bd: "Building strategic partnerships that accelerate data center energy deployment",
+    investment: "Evaluating and structuring energy investments for hyperscale data centers",
+    strategy: "Turning market intelligence into decision-grade models for data center power strategy"
 };
 
 // ===========================
