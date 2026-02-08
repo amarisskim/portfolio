@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alex Morgan | Energy Infrastructure Leader</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#hero" class="nav-logo">AM</a>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+                <span></span><span></span><span></span>
+            </button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#insights">Insights</a></li>
+                <li><a href="#testimonials">Testimonials</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#" class="nav-resume-btn" id="downloadResume">Resume ↓</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="container">
+            <p class="hero-greeting">Hello, I'm</p>
+            <h1 class="hero-name">Alex Morgan</h1>
+            <p class="hero-title" id="heroTitle">Building the energy infrastructure behind the AI revolution</p>
+            <p class="hero-subtitle">Energy Infrastructure · Data Centers · Strategic Growth</p>
+
+            <!-- Role Filter -->
+            <div class="role-filter">
+                <p class="filter-label">I'm looking for talent in:</p>
+                <div class="filter-buttons" id="roleFilter">
+                    <button class="filter-btn active" data-role="all">Show Everything</button>
+                    <button class="filter-btn" data-role="pm">Project Management</button>
+                    <button class="filter-btn" data-role="bd">Business Development</button>
+                    <button class="filter-btn" data-role="investment">Investment & Origination</button>
+                    <button class="filter-btn" data-role="strategy">Strategic Negotiation</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="section" id="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>I'm an energy infrastructure professional with deep expertise in powering data centers at scale. Over the past [X] years, I've worked at the intersection of energy development, infrastructure delivery, and strategic growth — helping organizations navigate the complexity of bringing reliable, sustainable power to the facilities that run the modern digital economy.</p>
+                    <p>My background spans the full project lifecycle: from originating and structuring energy deals, to managing cross-functional teams through construction and commissioning, to negotiating the commercial agreements that make projects bankable.</p>
+                    <p>I'm currently exploring new opportunities where I can bring this experience to a team that's building the next generation of data center energy infrastructure.</p>
+                </div>
+                <div class="about-highlights">
+                    <div class="highlight-card">
+                        <span class="highlight-number">[X]+</span>
+                        <span class="highlight-label">Years in Energy</span>
+                    </div>
+                    <div class="highlight-card">
+                        <span class="highlight-number">[X] MW</span>
+                        <span class="highlight-label">Projects Delivered</span>
+                    </div>
+                    <div class="highlight-card">
+                        <span class="highlight-number">$[X]M+</span>
+                        <span class="highlight-label">Deal Value</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section class="section section-alt" id="experience">
+        <div class="container">
+            <h2 class="section-title">Experience</h2>
+
+            <div class="timeline" id="experienceTimeline">
+                <!-- Experience 1 -->
+                <div class="timeline-item" data-roles="pm bd investment strategy">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>[Current Company]</h3>
+                            <span class="timeline-date">20XX – Present</span>
+                        </div>
+                        <h4>[Your Current Title]</h4>
+                        <div class="timeline-tags">
+                            <span class="tag tag-pm">Project Management</span>
+                            <span class="tag tag-bd">Business Development</span>
+                            <span class="tag tag-investment">Investment</span>
+                            <span class="tag tag-strategy">Strategy</span>
+                        </div>
+                        <!-- Role-adaptive bullet points -->
+                        <ul class="timeline-bullets">
+                            <li data-roles="pm">Led cross-functional teams of [X] people across engineering, procurement, and construction for [X] MW data center campus builds</li>
+                            <li data-roles="bd">Originated and closed $[X]M+ in new energy supply agreements with hyperscale data center clients</li>
+                            <li data-roles="investment">Structured and evaluated [X]+ power purchase agreements and investment opportunities totaling $[X]M in project value</li>
+                            <li data-roles="strategy">Negotiated complex multi-party agreements across utilities, landowners, and off-takers, reducing project risk and accelerating timelines by [X]%</li>
+                            <li data-roles="all">Managed end-to-end delivery of energy infrastructure projects serving major data center operators in [region]</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Experience 2 -->
+                <div class="timeline-item" data-roles="pm bd strategy">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>[Previous Company]</h3>
+                            <span class="timeline-date">20XX – 20XX</span>
+                        </div>
+                        <h4>[Previous Title]</h4>
+                        <div class="timeline-tags">
+                            <span class="tag tag-pm">Project Management</span>
+                            <span class="tag tag-bd">Business Development</span>
+                            <span class="tag tag-strategy">Strategy</span>
+                        </div>
+                        <ul class="timeline-bullets">
+                            <li data-roles="pm">Coordinated [X]+ concurrent workstreams across permitting, grid interconnection, and site development</li>
+                            <li data-roles="bd">Built pipeline of $[X]M in opportunities through strategic outreach to data center developers and colocation providers</li>
+                            <li data-roles="strategy">Led negotiations with [utility/ISO] for interconnection agreements, securing favorable terms that saved $[X]M in project costs</li>
+                            <li data-roles="all">Delivered critical energy infrastructure projects on time and under budget for [type] data center facilities</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Experience 3 -->
+                <div class="timeline-item" data-roles="pm investment">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>[Earlier Company]</h3>
+                            <span class="timeline-date">20XX – 20XX</span>
+                        </div>
+                        <h4>[Earlier Title]</h4>
+                        <div class="timeline-tags">
+                            <span class="tag tag-pm">Project Management</span>
+                            <span class="tag tag-investment">Investment</span>
+                        </div>
+                        <ul class="timeline-bullets">
+                            <li data-roles="pm">Managed project schedules, budgets, and vendor relationships for energy generation assets serving critical facilities</li>
+                            <li data-roles="investment">Performed financial modeling and due diligence on [X]+ energy asset acquisitions and development-stage investments</li>
+                            <li data-roles="all">Supported the development and financing of [X] MW of energy projects across [regions/technologies]</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="section" id="projects">
+        <div class="container">
+            <h2 class="section-title">Key Projects</h2>
+            <div class="projects-grid" id="projectsGrid">
+
+                <div class="project-card" data-roles="pm strategy">
+                    <div class="project-icon">⚡</div>
+                    <h3>[X] MW Data Center Campus</h3>
+                    <p>Led the end-to-end delivery of a [X] MW power infrastructure build for a hyperscale data center campus. Coordinated across [X] contractors and [X] regulatory bodies.</p>
+                    <div class="project-result">Result: Delivered [X] months ahead of schedule, saving $[X]M</div>
+                    <div class="project-tags">
+                        <span class="tag tag-pm">Project Management</span>
+                        <span class="tag tag-strategy">Strategy</span>
+                    </div>
+                </div>
+
+                <div class="project-card" data-roles="bd investment">
+                    <div class="project-icon">📊</div>
+                    <h3>$[X]M Energy Supply Portfolio</h3>
+                    <p>Originated and structured a portfolio of energy supply agreements for data center clients across [region]. Built relationships from cold outreach to signed contracts.</p>
+                    <div class="project-result">Result: Closed $[X]M in committed revenue over [X]-year terms</div>
+                    <div class="project-tags">
+                        <span class="tag tag-bd">Business Development</span>
+                        <span class="tag tag-investment">Investment</span>
+                    </div>
+                </div>
+
+                <div class="project-card" data-roles="strategy investment">
+                    <div class="project-icon">🤝</div>
+                    <h3>Multi-Party Interconnection Deal</h3>
+                    <p>Negotiated a complex interconnection and wheeling agreement involving [utility], [ISO], and [X] off-takers to unlock grid access for a constrained data center site.</p>
+                    <div class="project-result">Result: Unlocked [X] MW of capacity, enabling $[X]M in project value</div>
+                    <div class="project-tags">
+                        <span class="tag tag-strategy">Strategy</span>
+                        <span class="tag tag-investment">Investment</span>
+                    </div>
+                </div>
+
+                <div class="project-card" data-roles="pm bd">
+                    <div class="project-icon">🔋</div>
+                    <h3>Sustainable Power Program</h3>
+                    <p>Designed and launched a renewable energy procurement program for a portfolio of data center facilities, aligning sustainability goals with commercial viability.</p>
+                    <div class="project-result">Result: Secured [X]% renewable energy coverage, reducing carbon by [X] tons/year</div>
+                    <div class="project-tags">
+                        <span class="tag tag-pm">Project Management</span>
+                        <span class="tag tag-bd">Business Development</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="section section-alt" id="skills">
+        <div class="container">
+            <h2 class="section-title">Skills & Expertise</h2>
+            <div class="skills-grid" id="skillsGrid">
+
+                <div class="skill-category" data-roles="pm">
+                    <h3>Project Management</h3>
+                    <ul>
+                        <li>Cross-functional team leadership</li>
+                        <li>EPC contractor management</li>
+                        <li>Schedule & budget oversight</li>
+                        <li>Permitting & regulatory compliance</li>
+                        <li>Risk management & mitigation</li>
+                        <li>Stakeholder communication</li>
+                    </ul>
+                </div>
+
+                <div class="skill-category" data-roles="bd">
+                    <h3>Business Development</h3>
+                    <ul>
+                        <li>Pipeline generation & management</li>
+                        <li>Client relationship building</li>
+                        <li>Market analysis & opportunity sizing</li>
+                        <li>Proposal development & RFP response</li>
+                        <li>Strategic partnerships</li>
+                        <li>Revenue growth strategy</li>
+                    </ul>
+                </div>
+
+                <div class="skill-category" data-roles="investment">
+                    <h3>Investment & Origination</h3>
+                    <ul>
+                        <li>Financial modeling & valuation</li>
+                        <li>PPA structuring & analysis</li>
+                        <li>Due diligence & underwriting</li>
+                        <li>Deal sourcing & screening</li>
+                        <li>Capital allocation strategy</li>
+                        <li>Risk-return assessment</li>
+                    </ul>
+                </div>
+
+                <div class="skill-category" data-roles="strategy">
+                    <h3>Strategic Negotiation</h3>
+                    <ul>
+                        <li>Multi-party deal structuring</li>
+                        <li>Utility & ISO negotiations</li>
+                        <li>Interconnection agreements</li>
+                        <li>Commercial contract negotiation</li>
+                        <li>Regulatory strategy</li>
+                        <li>Conflict resolution</li>
+                    </ul>
+                </div>
+
+                <div class="skill-category" data-roles="all">
+                    <h3>Industry Knowledge</h3>
+                    <ul>
+                        <li>Data center power requirements</li>
+                        <li>Grid infrastructure & constraints</li>
+                        <li>Renewable energy technologies</li>
+                        <li>Energy storage systems</li>
+                        <li>Sustainability & ESG frameworks</li>
+                        <li>Regulatory landscape (FERC, state PUCs)</li>
+                    </ul>
+                </div>
+
+                <div class="skill-category" data-roles="all">
+                    <h3>Tools & Platforms</h3>
+                    <ul>
+                        <li>Project management (MS Project, Smartsheet)</li>
+                        <li>Financial modeling (Excel, Argus)</li>
+                        <li>CRM (Salesforce, HubSpot)</li>
+                        <li>Data analysis & reporting</li>
+                        <li>GIS & site assessment tools</li>
+                        <li>Contract management systems</li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Insights / LinkedIn Posts Section -->
+    <section class="section" id="insights">
+        <div class="container">
+            <h2 class="section-title">Industry Insights</h2>
+            <p class="section-subtitle">Thoughts on energy, data centers, and the future of infrastructure</p>
+
+            <div class="insights-filter" id="insightsFilter">
+                <button class="insight-filter-btn active" data-theme="all">All Topics</button>
+                <button class="insight-filter-btn" data-theme="ai-power">AI & Power Demand</button>
+                <button class="insight-filter-btn" data-theme="grid">Grid & Reliability</button>
+                <button class="insight-filter-btn" data-theme="sustainability">Sustainability</button>
+                <button class="insight-filter-btn" data-theme="market">Market Trends</button>
+            </div>
+
+            <div class="insights-grid" id="insightsGrid">
+
+                <article class="insight-card" data-themes="ai-power grid">
+                    <span class="insight-date">Month 20XX</span>
+                    <h3>The AI Power Crunch: Why Data Centers Are Reshaping the Grid</h3>
+                    <p>AI training clusters are demanding unprecedented power density. Here's what this means for grid planning and why utilities need to rethink their interconnection queues...</p>
+                    <div class="insight-tags">
+                        <span class="insight-tag">AI & Power Demand</span>
+                        <span class="insight-tag">Grid & Reliability</span>
+                    </div>
+                    <a href="#" class="insight-link" target="_blank" rel="noopener">Read on LinkedIn →</a>
+                </article>
+
+                <article class="insight-card" data-themes="sustainability market">
+                    <span class="insight-date">Month 20XX</span>
+                    <h3>24/7 Carbon-Free Energy: Ambition vs. Reality for Data Centers</h3>
+                    <p>Major tech companies are committing to 24/7 carbon-free energy. But the path from annual matching to hourly matching is harder than most realize...</p>
+                    <div class="insight-tags">
+                        <span class="insight-tag">Sustainability</span>
+                        <span class="insight-tag">Market Trends</span>
+                    </div>
+                    <a href="#" class="insight-link" target="_blank" rel="noopener">Read on LinkedIn →</a>
+                </article>
+
+                <article class="insight-card" data-themes="grid">
+                    <span class="insight-date">Month 20XX</span>
+                    <h3>Interconnection Bottlenecks: The Hidden Risk in Data Center Development</h3>
+                    <p>The average time to interconnect a new generation source has doubled in [X] years. For data center developers racing to meet demand, this is becoming the #1 constraint...</p>
+                    <div class="insight-tags">
+                        <span class="insight-tag">Grid & Reliability</span>
+                    </div>
+                    <a href="#" class="insight-link" target="_blank" rel="noopener">Read on LinkedIn →</a>
+                </article>
+
+                <article class="insight-card" data-themes="ai-power market">
+                    <span class="insight-date">Month 20XX</span>
+                    <h3>Nuclear, Gas, or Renewables? The Energy Mix Debate for Hyperscalers</h3>
+                    <p>Every major hyperscaler is placing different bets on their energy mix. Here's my analysis of what's driving each strategy and where I see the market heading...</p>
+                    <div class="insight-tags">
+                        <span class="insight-tag">AI & Power Demand</span>
+                        <span class="insight-tag">Market Trends</span>
+                    </div>
+                    <a href="#" class="insight-link" target="_blank" rel="noopener">Read on LinkedIn →</a>
+                </article>
+
+                <article class="insight-card" data-themes="sustainability grid">
+                    <span class="insight-date">Month 20XX</span>
+                    <h3>Energy Storage as Grid Insurance: A Data Center Perspective</h3>
+                    <p>Battery storage is evolving from a renewable energy add-on to a critical reliability tool for data center campuses. Here's why operators should pay attention...</p>
+                    <div class="insight-tags">
+                        <span class="insight-tag">Sustainability</span>
+                        <span class="insight-tag">Grid & Reliability</span>
+                    </div>
+                    <a href="#" class="insight-link" target="_blank" rel="noopener">Read on LinkedIn →</a>
+                </article>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="section section-alt" id="testimonials">
+        <div class="container">
+            <h2 class="section-title">What People Say</h2>
+            <div class="testimonials-grid">
+
+                <div class="testimonial-card">
+                    <p class="testimonial-quote">"[Alex] is one of the most effective project leaders I've worked with in the energy space. They have a rare ability to keep complex, multi-stakeholder projects on track while never losing sight of the commercial objectives."</p>
+                    <div class="testimonial-author">
+                        <strong>[Name]</strong>
+                        <span>[Title] at [Company]</span>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <p class="testimonial-quote">"What sets [Alex] apart is their ability to bridge the gap between technical teams and business stakeholders. They can walk into a room of engineers and a boardroom of investors and communicate effectively in both."</p>
+                    <div class="testimonial-author">
+                        <strong>[Name]</strong>
+                        <span>[Title] at [Company]</span>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <p class="testimonial-quote">"[Alex] originated and closed some of our most important energy supply deals. Their market knowledge and relationship skills are exceptional — they built trust with clients that turned into long-term partnerships."</p>
+                    <div class="testimonial-author">
+                        <strong>[Name]</strong>
+                        <span>[Title] at [Company]</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section" id="contact">
+        <div class="container">
+            <h2 class="section-title">Get in Touch</h2>
+            <p class="section-subtitle">Interested in connecting? I'd love to hear from you.</p>
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <span class="contact-icon">✉</span>
+                        <div>
+                            <strong>Email</strong>
+                            <a href="mailto:your.email@example.com">your.email@example.com</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <span class="contact-icon">🔗</span>
+                        <div>
+                            <strong>LinkedIn</strong>
+                            <a href="https://linkedin.com/in/yourprofile" target="_blank" rel="noopener">linkedin.com/in/yourprofile</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <span class="contact-icon">📍</span>
+                        <div>
+                            <strong>Location</strong>
+                            <span>[City, State]</span>
+                        </div>
+                    </div>
+                </div>
+                <form class="contact-form" id="contactForm">
+                    <input type="text" placeholder="Your Name" required>
+                    <input type="email" placeholder="Your Email" required>
+                    <input type="text" placeholder="Subject">
+                    <textarea placeholder="Your Message" rows="5" required></textarea>
+                    <button type="submit" class="btn-submit">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Alex Morgan. Built with purpose.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
