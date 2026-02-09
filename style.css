@@ -243,6 +243,10 @@ a:hover {
     font-weight: 500;
 }
 
+.filter-label-second {
+    margin-top: 20px;
+}
+
 .filter-buttons {
     display: flex;
     flex-wrap: wrap;
@@ -457,6 +461,28 @@ a:hover {
 .tag-bd { background: rgba(245, 158, 11, 0.15); color: var(--tag-bd); }
 .tag-investment { background: rgba(139, 92, 246, 0.15); color: var(--tag-investment); }
 .tag-strategy { background: rgba(239, 68, 68, 0.15); color: var(--tag-strategy); }
+.tag-partnership { background: rgba(6, 182, 212, 0.15); color: #06b6d4; }
+.tag-sales { background: rgba(249, 115, 22, 0.15); color: #f97316; }
+
+/* Industry tags */
+.industry-tag {
+    font-size: 0.7rem;
+    font-weight: 600;
+    padding: 3px 8px;
+    border-radius: 4px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    border: 1px solid;
+}
+
+.ind-climate { background: rgba(34, 197, 94, 0.1); color: #22c55e; border-color: rgba(34, 197, 94, 0.3); }
+.ind-energy { background: rgba(234, 179, 8, 0.1); color: #eab308; border-color: rgba(234, 179, 8, 0.3); }
+.ind-tech { background: rgba(59, 130, 246, 0.1); color: #3b82f6; border-color: rgba(59, 130, 246, 0.3); }
+.ind-telecom { background: rgba(168, 85, 247, 0.1); color: #a855f7; border-color: rgba(168, 85, 247, 0.3); }
+.ind-finance { background: rgba(239, 68, 68, 0.1); color: #ef4444; border-color: rgba(239, 68, 68, 0.3); }
+.ind-consumer { background: rgba(249, 115, 22, 0.1); color: #f97316; border-color: rgba(249, 115, 22, 0.3); }
+.ind-datacenter { background: rgba(6, 182, 212, 0.1); color: #06b6d4; border-color: rgba(6, 182, 212, 0.3); }
+.ind-ai { background: rgba(236, 72, 153, 0.1); color: #ec4899; border-color: rgba(236, 72, 153, 0.3); }
 
 .timeline-bullets {
     list-style: none;

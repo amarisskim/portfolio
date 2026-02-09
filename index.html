@@ -37,15 +37,29 @@
             <p class="hero-title" id="heroTitle">Powering the AI revolution through data center energy infrastructure</p>
             <p class="hero-subtitle">AI Infrastructure Strategy | Data Center Power | Partnerships | Ex-X moonshot, BCG, Google</p>
 
-            <!-- Role Filter -->
+            <!-- Filters -->
             <div class="role-filter">
-                <p class="filter-label">I'm recruiting for:</p>
+                <p class="filter-label">Filter by function:</p>
                 <div class="filter-buttons" id="roleFilter">
-                    <button class="filter-btn active" data-role="all">Show Everything</button>
+                    <button class="filter-btn active" data-role="all">All Functions</button>
+                    <button class="filter-btn" data-role="strategy">Strategy</button>
                     <button class="filter-btn" data-role="pm">Program Management</button>
                     <button class="filter-btn" data-role="bd">Business Development</button>
-                    <button class="filter-btn" data-role="investment">Investment & Origination</button>
-                    <button class="filter-btn" data-role="strategy">Strategy & Analytics</button>
+                    <button class="filter-btn" data-role="partnership">Partnership</button>
+                    <button class="filter-btn" data-role="sales">Sales</button>
+                    <button class="filter-btn" data-role="investment">Investment</button>
+                </div>
+                <p class="filter-label filter-label-second">Filter by industry:</p>
+                <div class="filter-buttons" id="industryFilter">
+                    <button class="filter-btn active" data-industry="all">All Industries</button>
+                    <button class="filter-btn" data-industry="datacenter">Data Center</button>
+                    <button class="filter-btn" data-industry="energy">Energy</button>
+                    <button class="filter-btn" data-industry="ai">AI</button>
+                    <button class="filter-btn" data-industry="climate">Climate</button>
+                    <button class="filter-btn" data-industry="tech">Tech</button>
+                    <button class="filter-btn" data-industry="telecom">Telecom</button>
+                    <button class="filter-btn" data-industry="finance">Finance</button>
+                    <button class="filter-btn" data-industry="consumer">Consumer</button>
                 </div>
             </div>
         </div>
@@ -93,7 +107,7 @@
             <div class="timeline" id="experienceTimeline">
 
                 <!-- Passkey -->
-                <div class="timeline-item" data-roles="pm bd investment strategy">
+                <div class="timeline-item" data-roles="strategy investment bd partnership pm" data-industries="energy datacenter ai climate">
                     <div class="timeline-marker"></div>
                     <div class="timeline-content">
                         <div class="timeline-header">
@@ -102,24 +116,31 @@
                         </div>
                         <h4>Interim VP, Business Strategy & Origination for Data Center Infrastructure</h4>
                         <div class="timeline-tags">
-                            <span class="tag tag-pm">Program Management</span>
-                            <span class="tag tag-bd">Business Development</span>
-                            <span class="tag tag-investment">Investment</span>
                             <span class="tag tag-strategy">Strategy</span>
+                            <span class="tag tag-investment">Investment</span>
+                            <span class="tag tag-bd">Business Development</span>
+                            <span class="tag tag-partnership">Partnership</span>
+                            <span class="tag tag-pm">Program Management</span>
+                        </div>
+                        <div class="timeline-tags">
+                            <span class="industry-tag ind-energy">Energy</span>
+                            <span class="industry-tag ind-datacenter">Data Center</span>
+                            <span class="industry-tag ind-ai">AI</span>
+                            <span class="industry-tag ind-climate">Climate</span>
                         </div>
                         <ul class="timeline-bullets">
-                            <li data-roles="investment strategy">Led strategy and diligence for an AI data center power investment initiative, evaluating both grid-tied and behind-the-meter solutions (gas, solar, BESS). Authored decision memos and pitched recommendations to the CEO</li>
-                            <li data-roles="investment strategy">Built an AI data center power requirements model (IT load to facility MW, redundancy assumptions, time-to-power constraints, cost) to screen site archetypes and prioritize investable pathways and geographies</li>
-                            <li data-roles="investment">Developed a BTM power playbook (gas + BESS), including LCOE modeling, equipment lead time/spec diligence, and power redundancy modeling to meet high reliability requirements along with fast time-to-power needs</li>
-                            <li data-roles="strategy pm">Mapped utility/ISO interconnection bottlenecks and proposed mitigation levers (phased build, hybridization, temporary power, contracting structure), translating grid realities into financeable development schedules</li>
-                            <li data-roles="bd">Led data center market and partner landscaping (hyperscalers, colocators, EPCs/OEMs, power/cooling vendors), producing a prioritized pipeline view based on urgency, competitive intensity, and execution risk</li>
-                            <li data-roles="strategy bd">Drove mid-long term growth strategy and operational improvement plans for portfolio company Key Capture Energy (utility-scale BESS), and shaped Passkey's broader US energy transition investment roadmap</li>
+                            <li data-roles="investment strategy" data-industries="energy datacenter ai">Led strategy and diligence for an AI data center power investment initiative, evaluating both grid-tied and behind-the-meter solutions (gas, solar, BESS). Authored decision memos and pitched recommendations to the CEO</li>
+                            <li data-roles="strategy investment" data-industries="datacenter ai energy">Built an AI data center power requirements model (IT load to facility MW, redundancy assumptions, time-to-power constraints, cost) to screen site archetypes and prioritize investable pathways and geographies</li>
+                            <li data-roles="investment" data-industries="energy datacenter">Developed a BTM power playbook (gas + BESS), including LCOE modeling, equipment lead time/spec diligence, and power redundancy modeling to meet high reliability requirements along with fast time-to-power needs</li>
+                            <li data-roles="strategy pm" data-industries="energy datacenter">Mapped utility/ISO interconnection bottlenecks and proposed mitigation levers (phased build, hybridization, temporary power, contracting structure), translating grid realities into financeable development schedules</li>
+                            <li data-roles="bd partnership" data-industries="datacenter energy ai">Led data center market and partner landscaping (hyperscalers, colocators, EPCs/OEMs, power/cooling vendors), producing a prioritized pipeline view based on urgency, competitive intensity, and execution risk</li>
+                            <li data-roles="strategy bd" data-industries="energy climate">Drove mid-long term growth strategy and operational improvement plans for portfolio company Key Capture Energy (utility-scale BESS), and shaped Passkey's broader US energy transition investment roadmap</li>
                         </ul>
                     </div>
                 </div>
 
                 <!-- X, the moonshot factory -->
-                <div class="timeline-item" data-roles="bd strategy pm">
+                <div class="timeline-item" data-roles="bd partnership strategy pm sales" data-industries="climate tech ai">
                     <div class="timeline-marker"></div>
                     <div class="timeline-content">
                         <div class="timeline-header">
@@ -129,19 +150,26 @@
                         <h4>BD & Strategy Program Manager (Taara) / Climate+ Strategy Resident (Fractal)</h4>
                         <div class="timeline-tags">
                             <span class="tag tag-bd">Business Development</span>
+                            <span class="tag tag-partnership">Partnership</span>
                             <span class="tag tag-strategy">Strategy</span>
                             <span class="tag tag-pm">Program Management</span>
+                            <span class="tag tag-sales">Sales</span>
+                        </div>
+                        <div class="timeline-tags">
+                            <span class="industry-tag ind-climate">Climate</span>
+                            <span class="industry-tag ind-tech">Tech</span>
+                            <span class="industry-tag ind-ai">AI</span>
                         </div>
                         <ul class="timeline-bullets">
-                            <li data-roles="bd">Originated and structured a strategic partnership with a global automotive OEM, turning a 0-to-1 concept into a funded pilot. Quantified AI-enabled decarbonization opportunities in supply chains</li>
-                            <li data-roles="strategy">Built B2B partner GTM strategy and product positioning through ecosystem mapping of incumbents and startups; prioritized supply chain management software partners to steer commercialization decisions</li>
-                            <li data-roles="bd pm">Led lead prospecting and new customer acquisition for Taara, a wireless optical communications hardware project</li>
+                            <li data-roles="bd partnership" data-industries="climate tech ai">Originated and structured a strategic partnership with a global automotive OEM, turning a 0-to-1 concept into a funded pilot. Quantified AI-enabled decarbonization opportunities in supply chains</li>
+                            <li data-roles="strategy partnership" data-industries="tech ai">Built B2B partner GTM strategy and product positioning through ecosystem mapping of incumbents and startups; prioritized supply chain management software partners to steer commercialization decisions</li>
+                            <li data-roles="bd sales pm" data-industries="tech">Led lead prospecting and new customer acquisition for Taara, a wireless optical communications hardware project</li>
                         </ul>
                     </div>
                 </div>
 
                 <!-- Organica -->
-                <div class="timeline-item" data-roles="bd strategy">
+                <div class="timeline-item" data-roles="bd partnership strategy" data-industries="consumer climate">
                     <div class="timeline-marker"></div>
                     <div class="timeline-content">
                         <div class="timeline-header">
@@ -151,17 +179,22 @@
                         <h4>Head of Business Strategy and Development</h4>
                         <div class="timeline-tags">
                             <span class="tag tag-bd">Business Development</span>
+                            <span class="tag tag-partnership">Partnership</span>
                             <span class="tag tag-strategy">Strategy</span>
                         </div>
+                        <div class="timeline-tags">
+                            <span class="industry-tag ind-consumer">Consumer</span>
+                            <span class="industry-tag ind-climate">Climate</span>
+                        </div>
                         <ul class="timeline-bullets">
-                            <li data-roles="strategy">Established seed-stage alt-protein startup's first structured GTM strategy in Korea, including customer segmentation, channel prioritization, and data-driven pricing based on competitive landscapes</li>
-                            <li data-roles="bd">Led global business development by constructing a 3-step SE Asia expansion strategy. Won a partnership with Thailand's largest conglomerate (MOU signed)</li>
+                            <li data-roles="strategy" data-industries="consumer climate">Established seed-stage alt-protein startup's first structured GTM strategy in Korea, including customer segmentation, channel prioritization, and data-driven pricing based on competitive landscapes</li>
+                            <li data-roles="bd partnership" data-industries="consumer climate">Led global business development by constructing a 3-step SE Asia expansion strategy. Won a partnership with Thailand's largest conglomerate (MOU signed)</li>
                         </ul>
                     </div>
                 </div>
 
                 <!-- Fittacker -->
-                <div class="timeline-item" data-roles="pm bd">
+                <div class="timeline-item" data-roles="pm bd sales" data-industries="tech consumer">
                     <div class="timeline-marker"></div>
                     <div class="timeline-content">
                         <div class="timeline-header">
@@ -172,16 +205,21 @@
                         <div class="timeline-tags">
                             <span class="tag tag-pm">Program Management</span>
                             <span class="tag tag-bd">Business Development</span>
+                            <span class="tag tag-sales">Sales</span>
+                        </div>
+                        <div class="timeline-tags">
+                            <span class="industry-tag ind-tech">Tech</span>
+                            <span class="industry-tag ind-consumer">Consumer</span>
                         </div>
                         <ul class="timeline-bullets">
-                            <li data-roles="bd">Won a Korean government pitch competition, receiving $80K in seed investment and joined accelerator program (acceptance rate &lt;5%)</li>
-                            <li data-roles="pm">Owned product roadmap and managed end-to-end development with a team of 3 engineers + 1 designer. Achieved 6,000 user downloads</li>
+                            <li data-roles="bd sales" data-industries="tech consumer">Won a Korean government pitch competition, receiving $80K in seed investment and joined accelerator program (acceptance rate &lt;5%)</li>
+                            <li data-roles="pm" data-industries="tech consumer">Owned product roadmap and managed end-to-end development with a team of 3 engineers + 1 designer. Achieved 6,000 user downloads</li>
                         </ul>
                     </div>
                 </div>
 
                 <!-- Google -->
-                <div class="timeline-item" data-roles="bd strategy pm">
+                <div class="timeline-item" data-roles="sales bd strategy pm partnership" data-industries="tech telecom">
                     <div class="timeline-marker"></div>
                     <div class="timeline-content">
                         <div class="timeline-header">
@@ -190,21 +228,27 @@
                         </div>
                         <h4>Account Manager, Large Customer Sales (~$30M portfolio)</h4>
                         <div class="timeline-tags">
+                            <span class="tag tag-sales">Sales</span>
                             <span class="tag tag-bd">Business Development</span>
                             <span class="tag tag-strategy">Strategy</span>
                             <span class="tag tag-pm">Program Management</span>
+                            <span class="tag tag-partnership">Partnership</span>
+                        </div>
+                        <div class="timeline-tags">
+                            <span class="industry-tag ind-tech">Tech</span>
+                            <span class="industry-tag ind-telecom">Telecom</span>
                         </div>
                         <ul class="timeline-bullets">
-                            <li data-roles="bd">Drove +30% YoY sales growth (10% over target) across a ~$30M book by leading account strategy, executive QBRs, and cross-functional growth initiatives</li>
-                            <li data-roles="bd">Transformed a Tier 2 client into a Tier 1 account with a $15M sale (200% YoY growth) by creating a strategic marketing plan with competitive analysis and tactical targeting solutions</li>
-                            <li data-roles="pm strategy">Led cross-functional project across 4 teams, pioneering implementation of a new Google marketing data analytics platform. Delivered +$200K campaign revenue uplift and unlocked new sales opportunities</li>
-                            <li data-roles="bd strategy">Pioneered adoption of 10+ Google Ad beta solutions with 7 clients, creating use-case templates that became "lighthouse" best practices within Google worldwide. Galaxy S21 campaign highlighted at Google APAC annual conference</li>
+                            <li data-roles="sales bd" data-industries="tech telecom">Drove +30% YoY sales growth (10% over target) across a ~$30M book by leading account strategy, executive QBRs, and cross-functional growth initiatives</li>
+                            <li data-roles="sales bd strategy" data-industries="tech telecom">Transformed a Tier 2 client into a Tier 1 account with a $15M sale (200% YoY growth) by creating a strategic marketing plan with competitive analysis and tactical targeting solutions</li>
+                            <li data-roles="pm strategy" data-industries="tech">Led cross-functional project across 4 teams, pioneering implementation of a new Google marketing data analytics platform. Delivered +$200K campaign revenue uplift and unlocked new sales opportunities</li>
+                            <li data-roles="bd partnership strategy" data-industries="tech telecom">Pioneered adoption of 10+ Google Ad beta solutions with 7 clients, creating use-case templates that became "lighthouse" best practices within Google worldwide. Galaxy S21 campaign highlighted at Google APAC annual conference</li>
                         </ul>
                     </div>
                 </div>
 
                 <!-- BCG -->
-                <div class="timeline-item" data-roles="strategy investment pm">
+                <div class="timeline-item" data-roles="strategy investment pm bd partnership" data-industries="telecom tech finance consumer">
                     <div class="timeline-marker"></div>
                     <div class="timeline-content">
                         <div class="timeline-header">
@@ -216,16 +260,24 @@
                             <span class="tag tag-strategy">Strategy</span>
                             <span class="tag tag-investment">Investment</span>
                             <span class="tag tag-pm">Program Management</span>
+                            <span class="tag tag-bd">Business Development</span>
+                            <span class="tag tag-partnership">Partnership</span>
+                        </div>
+                        <div class="timeline-tags">
+                            <span class="industry-tag ind-telecom">Telecom</span>
+                            <span class="industry-tag ind-tech">Tech</span>
+                            <span class="industry-tag ind-finance">Finance</span>
+                            <span class="industry-tag ind-consumer">Consumer</span>
                         </div>
                         <ul class="timeline-bullets">
-                            <li data-roles="strategy">Spearheaded the launch of the world's first mobile 5G service with a Korean telco. Conducted funnel analysis to prioritize high-impact services (cloud gaming, AR, VR), built 5-year monetization plans, and increased client market share by 9%</li>
-                            <li data-roles="strategy investment">Built a customer migration model using 13M user records; quantified price sensitivity and forecasted 5G adoption scenarios to guide pricing. Presented recommendations to CSO and CFO</li>
-                            <li data-roles="strategy">Advised Taiwanese telco CEO on 5G launch strategy as global 5G expert. Identified cost reduction opportunities and drove pivot to a cost-sensitive offering, reducing planned launch budget by ~50%</li>
-                            <li data-roles="pm">Led a client's internal venture team (smart factory platform) through agile transformation and innovation sprint. Team won 1st place in pitch competition, securing $10M in funding. Awarded 'Agile Coach of the Year'</li>
-                            <li data-roles="investment strategy">Restructured global semiconductor packaging client's portfolio using market sizing and profitability modeling; helped reverse 3-year flat growth and drive +7% annual revenue</li>
-                            <li data-roles="investment">Owned market analysis and financial modeling workstreams across multiple healthcare M&A due diligences for global PE clients</li>
-                            <li data-roles="strategy">Established a 5-year global expansion strategy for a duty-free retailer by assessing 100+ country markets in 4 weeks. Drafted customer retention strategy that lifted revenue by ~20% (approx. $600M)</li>
-                            <li data-roles="bd">Won an exclusive PLCC partnership deal for a credit card client, displacing an 18-year incumbent competitor and bringing ~1.5 million new customers in less than a year</li>
+                            <li data-roles="strategy" data-industries="telecom">Spearheaded the launch of the world's first mobile 5G service with a Korean telco. Conducted funnel analysis to prioritize high-impact services (cloud gaming, AR, VR), built 5-year monetization plans, and increased client market share by 9%</li>
+                            <li data-roles="strategy investment" data-industries="telecom">Built a customer migration model using 13M user records; quantified price sensitivity and forecasted 5G adoption scenarios to guide pricing. Presented recommendations to CSO and CFO</li>
+                            <li data-roles="strategy" data-industries="telecom">Advised Taiwanese telco CEO on 5G launch strategy as global 5G expert. Identified cost reduction opportunities and drove pivot to a cost-sensitive offering, reducing planned launch budget by ~50%</li>
+                            <li data-roles="pm" data-industries="tech">Led a client's internal venture team (smart factory platform) through agile transformation and innovation sprint. Team won 1st place in pitch competition, securing $10M in funding. Awarded 'Agile Coach of the Year'</li>
+                            <li data-roles="investment strategy" data-industries="tech">Restructured global semiconductor packaging client's portfolio using market sizing and profitability modeling; helped reverse 3-year flat growth and drive +7% annual revenue</li>
+                            <li data-roles="investment" data-industries="finance">Owned market analysis and financial modeling workstreams across multiple healthcare M&A due diligences for global PE clients</li>
+                            <li data-roles="strategy" data-industries="consumer">Established a 5-year global expansion strategy for a duty-free retailer by assessing 100+ country markets in 4 weeks. Drafted customer retention strategy that lifted revenue by ~20% (approx. $600M)</li>
+                            <li data-roles="bd partnership" data-industries="finance consumer">Won an exclusive PLCC partnership deal for a credit card client, displacing an 18-year incumbent competitor and bringing ~1.5 million new customers in less than a year</li>
                         </ul>
                     </div>
                 </div>
@@ -240,7 +292,7 @@
             <h2 class="section-title">Key Projects</h2>
             <div class="projects-grid" id="projectsGrid">
 
-                <div class="project-card" data-roles="investment strategy">
+                <div class="project-card" data-roles="investment strategy" data-industries="energy datacenter ai">
                     <div class="project-icon">&#9889;</div>
                     <h3>AI Data Center Power Investment Initiative</h3>
                     <p>Led end-to-end strategy and diligence for Passkey's data center power investment thesis. Built power requirements models, developed BTM playbooks with LCOE analysis, and mapped interconnection bottlenecks across target geographies.</p>
@@ -248,10 +300,13 @@
                     <div class="project-tags">
                         <span class="tag tag-investment">Investment</span>
                         <span class="tag tag-strategy">Strategy</span>
+                        <span class="industry-tag ind-energy">Energy</span>
+                        <span class="industry-tag ind-datacenter">Data Center</span>
+                        <span class="industry-tag ind-ai">AI</span>
                     </div>
                 </div>
 
-                <div class="project-card" data-roles="strategy pm">
+                <div class="project-card" data-roles="strategy pm" data-industries="telecom">
                     <div class="project-icon">&#128225;</div>
                     <h3>World's First 5G Service Launch</h3>
                     <p>Spearheaded the commercial launch of the world's first mobile 5G service at BCG. Analyzed 13M user records to build migration models, designed pricing strategy, and created 5-year monetization plans for each service vertical.</p>
@@ -259,48 +314,60 @@
                     <div class="project-tags">
                         <span class="tag tag-strategy">Strategy</span>
                         <span class="tag tag-pm">Program Management</span>
+                        <span class="industry-tag ind-telecom">Telecom</span>
                     </div>
                 </div>
 
-                <div class="project-card" data-roles="bd strategy">
+                <div class="project-card" data-roles="bd partnership strategy" data-industries="climate tech ai">
                     <div class="project-icon">&#127793;</div>
                     <h3>0-to-1 Automotive OEM Partnership</h3>
                     <p>At X (Google's moonshot factory), originated and structured a strategic partnership with a global automotive OEM. Identified AI-enabled decarbonization opportunities in supply chains and turned a nascent idea into a funded pilot.</p>
                     <div class="project-result">Result: Concept went from zero to funded pilot with a global OEM partner</div>
                     <div class="project-tags">
                         <span class="tag tag-bd">Business Development</span>
+                        <span class="tag tag-partnership">Partnership</span>
                         <span class="tag tag-strategy">Strategy</span>
+                        <span class="industry-tag ind-climate">Climate</span>
+                        <span class="industry-tag ind-tech">Tech</span>
+                        <span class="industry-tag ind-ai">AI</span>
                     </div>
                 </div>
 
-                <div class="project-card" data-roles="bd pm">
+                <div class="project-card" data-roles="sales bd pm" data-industries="tech telecom">
                     <div class="project-icon">&#128200;</div>
                     <h3>$30M Google Ads Portfolio Growth</h3>
                     <p>Managed Korea's largest Google Ads accounts (SK, Samsung, GM). Drove +30% YoY growth through strategic account management, executive QBRs, and cross-functional initiatives including a $15M pipeline expansion.</p>
                     <div class="project-result">Result: +30% YoY growth, $15M pipeline expansion, Tier 2 to Tier 1 account upgrade</div>
                     <div class="project-tags">
+                        <span class="tag tag-sales">Sales</span>
                         <span class="tag tag-bd">Business Development</span>
                         <span class="tag tag-pm">Program Management</span>
+                        <span class="industry-tag ind-tech">Tech</span>
+                        <span class="industry-tag ind-telecom">Telecom</span>
                     </div>
                 </div>
 
-                <div class="project-card" data-roles="pm">
+                <div class="project-card" data-roles="pm" data-industries="tech">
                     <div class="project-icon">&#129302;</div>
                     <h3>Smart Factory Agile Transformation</h3>
                     <p>Led a struggling client internal venture team through an agile transformation and innovation sprint at BCG. Coached the team from failing trajectory to pitch competition victory.</p>
                     <div class="project-result">Result: Won 1st place, secured $10M funding. Platform reached 500+ B2B clients and was recognized at Davos WEF 2021</div>
                     <div class="project-tags">
                         <span class="tag tag-pm">Program Management</span>
+                        <span class="industry-tag ind-tech">Tech</span>
                     </div>
                 </div>
 
-                <div class="project-card" data-roles="bd">
+                <div class="project-card" data-roles="bd partnership" data-industries="consumer climate">
                     <div class="project-icon">&#127758;</div>
                     <h3>SE Asia Market Expansion (Organica)</h3>
                     <p>Built the global expansion playbook for a seed-stage alt-protein startup. Constructed a 3-step SE Asia strategy with partnership models for Thailand and Singapore JV candidates.</p>
                     <div class="project-result">Result: Signed MOU with Thailand's #1 conglomerate</div>
                     <div class="project-tags">
                         <span class="tag tag-bd">Business Development</span>
+                        <span class="tag tag-partnership">Partnership</span>
+                        <span class="industry-tag ind-consumer">Consumer</span>
+                        <span class="industry-tag ind-climate">Climate</span>
                     </div>
                 </div>
 
@@ -314,44 +381,8 @@
             <h2 class="section-title">Skills & Expertise</h2>
             <div class="skills-grid" id="skillsGrid">
 
-                <div class="skill-category" data-roles="pm">
-                    <h3>Program Management</h3>
-                    <ul>
-                        <li>Cross-functional program management</li>
-                        <li>Operating cadence & KPI dashboards</li>
-                        <li>Product roadmap ownership</li>
-                        <li>Agile transformation & coaching</li>
-                        <li>Vendor & partner coordination</li>
-                        <li>Executive stakeholder communication</li>
-                    </ul>
-                </div>
-
-                <div class="skill-category" data-roles="bd">
-                    <h3>Business Development</h3>
-                    <ul>
-                        <li>Partner strategy & negotiation</li>
-                        <li>Pipeline generation & management</li>
-                        <li>Customer acquisition & account growth</li>
-                        <li>Executive relationship management</li>
-                        <li>GTM strategy development</li>
-                        <li>Market landscaping & competitive intel</li>
-                    </ul>
-                </div>
-
-                <div class="skill-category" data-roles="investment">
-                    <h3>Investment & Origination</h3>
-                    <ul>
-                        <li>Financial & LCOE modeling</li>
-                        <li>Investment diligence & screening</li>
-                        <li>Scenario modeling & forecasting</li>
-                        <li>M&A due diligence</li>
-                        <li>PPA & contract structuring</li>
-                        <li>Risk-return assessment</li>
-                    </ul>
-                </div>
-
                 <div class="skill-category" data-roles="strategy">
-                    <h3>Strategy & Analytics</h3>
+                    <h3>Strategy</h3>
                     <ul>
                         <li>Market intelligence & competitive analysis</li>
                         <li>Data center power requirements modeling</li>
@@ -359,6 +390,66 @@
                         <li>Business portfolio optimization</li>
                         <li>Pricing strategy & customer segmentation</li>
                         <li>Data-driven decision frameworks</li>
+                    </ul>
+                </div>
+
+                <div class="skill-category" data-roles="pm">
+                    <h3>Program Management</h3>
+                    <ul>
+                        <li>Cross-functional program management</li>
+                        <li>Operating cadence & KPI dashboards</li>
+                        <li>Product roadmap ownership</li>
+                        <li>Agile transformation & coaching</li>
+                        <li>Vendor & contractor coordination</li>
+                        <li>Executive stakeholder communication</li>
+                    </ul>
+                </div>
+
+                <div class="skill-category" data-roles="bd">
+                    <h3>Business Development</h3>
+                    <ul>
+                        <li>Pipeline generation & management</li>
+                        <li>Customer acquisition & account growth</li>
+                        <li>Market landscaping & competitive intel</li>
+                        <li>GTM strategy development</li>
+                        <li>Lead prospecting & qualification</li>
+                        <li>Proposal development & RFP response</li>
+                    </ul>
+                </div>
+
+                <div class="skill-category" data-roles="partnership">
+                    <h3>Partnership</h3>
+                    <ul>
+                        <li>Partner strategy & negotiation</li>
+                        <li>Joint venture structuring</li>
+                        <li>Ecosystem mapping & partner selection</li>
+                        <li>Executive relationship management</li>
+                        <li>Cross-organizational alignment</li>
+                        <li>Strategic alliance management</li>
+                    </ul>
+                </div>
+
+                <div class="skill-category" data-roles="sales">
+                    <h3>Sales</h3>
+                    <ul>
+                        <li>Enterprise account management</li>
+                        <li>Revenue growth & quota attainment</li>
+                        <li>Executive QBRs & presentations</li>
+                        <li>Consultative & solution selling</li>
+                        <li>Pitch competitions & fundraising</li>
+                        <li>Client retention & upsell strategy</li>
+                    </ul>
+                </div>
+
+                <div class="skill-category" data-roles="investment">
+                    <h3>Investment</h3>
+                    <ul>
+                        <li>Financial & LCOE modeling</li>
+                        <li>Investment diligence & screening</li>
+                        <li>Scenario modeling & forecasting</li>
+                        <li>M&A due diligence</li>
+                        <li>PPA & contract structuring</li>
+                        <li>Risk-return assessment</li>
                     </ul>
                 </div>
 
