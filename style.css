@@ -243,6 +243,10 @@ a:hover {
     font-weight: 500;
 }
 
+.filter-label-second {
+    margin-top: 20px;
+}
+
 .filter-buttons {
     display: flex;
     flex-wrap: wrap;
@@ -317,6 +321,48 @@ a:hover {
     font-size: 0.85rem;
     color: var(--text-muted);
     font-weight: 500;
+}
+
+/* ===========================
+   Education Cards
+   =========================== */
+.education-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+    margin-top: 40px;
+}
+
+.education-card {
+    background: var(--bg-card);
+    border: 1px solid var(--border-light);
+    border-radius: var(--radius);
+    padding: 24px 28px;
+}
+
+.education-card h3 {
+    font-size: 1.05rem;
+    font-weight: 600;
+    margin-bottom: 4px;
+}
+
+.education-degree {
+    color: var(--accent);
+    font-size: 0.95rem;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.education-detail {
+    color: var(--text-muted);
+    font-size: 0.85rem;
+    line-height: 1.6;
+}
+
+@media (max-width: 640px) {
+    .education-grid {
+        grid-template-columns: 1fr;
+    }
 }
 
 /* ===========================
@@ -415,6 +461,31 @@ a:hover {
 .tag-bd { background: rgba(245, 158, 11, 0.15); color: var(--tag-bd); }
 .tag-investment { background: rgba(139, 92, 246, 0.15); color: var(--tag-investment); }
 .tag-strategy { background: rgba(239, 68, 68, 0.15); color: var(--tag-strategy); }
+.tag-partnership { background: rgba(249, 115, 22, 0.15); color: #f97316; }
+.tag-sales { background: rgba(249, 115, 22, 0.15); color: #f97316; }
+
+/* Industry tags */
+.industry-tag {
+    font-size: 0.75rem;
+    font-weight: 600;
+    padding: 4px 10px;
+    border-radius: 20px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    background: rgba(59, 130, 246, 0.15);
+    color: #3b82f6;
+}
+
+.ind-climate { }
+.ind-energy { }
+.ind-tech { }
+.ind-telecom { }
+.ind-finance { }
+.ind-consumer { }
+.ind-datacenter { }
+.ind-ai { }
+.ind-infrastructure { }
+.ind-supplychain { }
 
 .timeline-bullets {
     list-style: none;
